@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        .pomaranczowy {
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+            transition: 2s;
+        }
+
+        .pomaranczowy:hover {
+            background-color: red;
+            width: 300px;
+        }
+
+        .fioletowy {
+            width: 120px;
+            height: 120px;
+            background-color: purple;
+            margin: 10px 0;
+            transition: 1s;
+            color: transparent;
+        }
+
+        .fioletowy:hover {
+            margin-left: 200px;
+            color: white;
+        }
+
+        .linear { transition-timing-function: linear; }
+        .ease { transition-timing-function: ease; }
+        .ease-in { transition-timing-function: ease-in; }
+        .ease-out { transition-timing-function: ease-out; }
+    </style>
+</head>
+<body>
+
+    <div class="pomaranczowy"></div>
+
+    <br>
+
+    <main>
+        <div class="fioletowy linear">linear</div>
+        <div class="fioletowy ease">ease</div>
+        <div class="fioletowy ease-in">ease-in</div>
+        <div class="fioletowy ease-out">ease-out</div>
+    </main>
+
+</body>
+</html>
